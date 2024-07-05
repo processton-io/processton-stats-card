@@ -68,4 +68,56 @@ class ProcesstonStatsCard
             'seperator' => '',
         ];
     }
+
+    public static function generateStatsComparisonCard(
+        $title, 
+        $value = 0,
+        $divider,
+        $value_2 = 0,
+        $icon = '',
+        $unit,
+        $unit2, 
+        $subTitle = '', 
+        $format = false,
+        $attachments = [],
+        $width = false,
+        $name = ''
+    ){
+        return ProcesstonInteraction::generateElement(
+            'stats_card',
+            $title,
+            self::generateStatsComparisonCardData($title, $value,$divider,$valu2, $unit, $unit2, $format, $icon, $subTitle),
+            $subTitle,
+            $attachments,
+            [],
+            $width,
+            $name ? $name : $title
+        );
+    }
+
+    public static function generateStatsComparisonCardData(
+        $title,
+        $value,
+        $divider,
+        $valu2,
+        $unit,
+        $unit2,
+        $format = false,
+        $icon = '',
+        $subTitle = ''
+    ){
+        return [
+            'title' => $title,
+            'subtitle' => $subTitle,
+            'type' => 'stats_card',
+            'value' => $value,
+            'format' => $format,
+            'value_2' => $valu2,
+            'icon' => $icon,
+            'unit' => $unit,
+            'unit_2' => $unit2,
+            'precision' => '',
+            'seperator' => $divider,
+        ];
+    }
 }
