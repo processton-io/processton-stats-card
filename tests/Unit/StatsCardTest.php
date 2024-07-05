@@ -131,7 +131,7 @@ class StatsCardTest extends TestCase
             'data' => [
                 'title' => 'Title',
                 'subtitle' => 'Sub Title',
-                'type' => 'stats_card',
+                'type' => 'simple_dual',
                 'value' => 0,
                 'format' => false,
                 'value_2' => 0,
@@ -176,7 +176,7 @@ class StatsCardTest extends TestCase
         $expected = [
             'title' => 'Title',
             'subtitle' => 'Sub Title',
-            'type' => 'stats_card',
+            'type' => 'simple_dual',
             'value' => 0,
             'format' => false,
             'value_2' => 0,

@@ -109,7 +109,7 @@ class ProcesstonStatsCard
         return [
             'title' => $title,
             'subtitle' => $subTitle,
-            'type' => 'stats_card',
+            'type' => 'simple_dual',
             'value' => $value,
             'format' => $format,
             'value_2' => $value2,
