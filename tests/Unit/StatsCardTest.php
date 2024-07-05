@@ -135,7 +135,7 @@ class StatsCardTest extends TestCase
                 'value' => 0,
                 'format' => false,
                 'value_2' => 0,
-                'icon' => '',
+                'icon' => 'user',
                 'unit' => 'unit1',
                 'unit_2' => 'unit2',
                 'precision' => '',
